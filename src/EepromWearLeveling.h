@@ -58,7 +58,7 @@ class EepromWearLeveling {
     void initialize(uint16_t _minimumAddress = 0, 
 	  uint16_t _maximumAddress = EEPROM.length() - 1, 
 	  uint8_t _valueSize = 4, 
-	  unsigned long _maximumValue = -2;
+	  unsigned long _maximumValue = -2);
       void writeValue(unsigned long writeValue);
     unsigned long getHighestUnsignedLong();
     void clearRange();

@@ -39,10 +39,16 @@ void setup()
   Serial.println(__DATE__);
   Serial.println("\n\n");
 
+
+  // Delete the whole EEprom before the first run.
+  // Comment this line first test.
+  MyData.clearWholeEeprom();
+
+
   // Test 1 *********************************************************************
   Serial.println("\n \n Test 1:\n");
 
-  Serial.println("Initialisierung");
+  Serial.println("Initialize");
   MyData.initialize(0, EEPROM.length() / 8, 4);
   Serial.println("Delete EEPROM Range");
   MyData.clearRange();
@@ -73,6 +79,8 @@ void setup()
   Serial.println("\n \n Test 2:\n");
 
   MyData2.initialize( (EEPROM.length() / 8) + 1, (EEPROM.length() / 8) + 15, 4, 19);
+  //Delete for testing purposes
+  MyData2.clearRange();
 
   for (int i = 0 ; i < 30; i ++) {
     MyData2.writeValue(MyData2.getHighestUnsignedLong() + 1L);
