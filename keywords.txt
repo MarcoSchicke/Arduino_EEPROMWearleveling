@@ -1,0 +1,12 @@
+# Syntax Coloring Map For ExampleLibrary
+
+# Datatypes (KEYWORD1)
+
+# Methods and Functions (KEYWORD2)
+initialize KEYWORD2
+writeValue KEYWORD2
+getHighestUnsignedLong KEYWORD2
+
+# Instances (KEYWORD2)
+
+# Constants (LITERAL1)
