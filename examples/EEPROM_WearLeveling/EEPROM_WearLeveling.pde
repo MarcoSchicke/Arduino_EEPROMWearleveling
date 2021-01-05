@@ -27,7 +27,7 @@ EepromWearLeveling MyData2;
 void setup()
 {
   delay(600);
-  Serial.begin(115200);
+  Serial.begin(9600);
   Serial.println("\nTesting Eeprom\n");
 
   // Send Information for easier debugging

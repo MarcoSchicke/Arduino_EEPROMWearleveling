@@ -1,11 +1,14 @@
 # Syntax Coloring Map For ExampleLibrary
 
 # Datatypes (KEYWORD1)
+EepromWearLeveling KEYWORD1
 
 # Methods and Functions (KEYWORD2)
-initialize KEYWORD2
-writeValue KEYWORD2
+initialize             KEYWORD2
+writeValue             KEYWORD2
 getHighestUnsignedLong KEYWORD2
+clearRange             KEYWORD2
+clearWholeEeprom       KEYWORD2
 
 # Instances (KEYWORD2)
 
